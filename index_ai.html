@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پورتفولیو حسام جعفری‌پور | Hesam Jafaripoor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4f46e5', // Indigo 600
+                        secondary: '#8b5cf6', // Violet 500
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -10px rgba(79, 70, 229, 0.15)',
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Glassmorphism Utilities */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Ambient Glow Background */
+        .ambient-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(180deg, rgba(79, 70, 229, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-primary selection:text-white relative overflow-x-hidden">
+
+    <!-- Decorative Glows -->
+    <div class="ambient-glow -top-40 -right-40"></div>
+    <div class="ambient-glow top-1/2 -left-40"></div>
+
+    <!-- Navigation -->
+    <nav name="navbar" class="fixed w-full z-50 transition-all duration-300 top-0 pt-4 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto glass rounded-2xl shadow-sm px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-slate-900">
+                حسام <span class="text-primary">.</span>
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary transition-colors">درباره من</a>
+                <a href="#services" class="hover:text-primary transition-colors">خدمات</a>
+                <a href="#projects" class="hover:text-primary transition-colors">پروژه‌ها</a>
+                <a href="#testimonials" class="hover:text-primary transition-colors">نظرات</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 bg-slate-900 rounded-full hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900">
+                تماس با من
+            </a>
+            <!-- Mobile Menu Icon (Placeholder) -->
+            <button class="md:hidden text-slate-600">
+                <div class="w-6 h-6 overflow-hidden">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=menu&icon_set=tabler&color=475569" alt="Menu" class="w-full h-full object-cover">
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header name="hero" class="relative pt-40 pb-20 lg:pt-52 lg:pb-32 px-4 sm:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div class="text-center lg:text-right space-y-8 relative z-10 order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-sm font-medium text-slate-600">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    آماده همکاری در پروژه‌های جدید
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight text-slate-900">
+                    خلاقیت در دنیای <br>
+                    <span class="text-gradient">دیجیتال و هوش مصنوعی</span>
+                </h1>
+                
+                <div class="space-y-2 text-xl text-slate-500 font-light">
+                    <p>من <strong class="text-slate-800 font-bold">حسام جعفری‌پور</strong> هستم</p>
+                    <p>توسعه‌دهنده هوش مصنوعی، طراح لوگو و رابط‌کاربری</p>
+                </div>
+
+                <p class="text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    با ترکیب هنر طراحی و قدرت تکنولوژی، ایده‌های شما را به واقعیت‌های دیجیتال خیره‌کننده تبدیل می‌کنم. تمرکز من بر خلق تجربه‌های کاربری مینیمال و هوشمند است.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-premium hover:shadow-indigo-500/30 hover:-translate-y-1">
+                        تماس با من
+                    </a>
+                    <a href="#projects" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-slate-700 transition-all duration-200 bg-white border border-slate-200 rounded-2xl hover:bg-slate-50 hover:border-slate-300 hover:text-primary">
+                        مشاهده پروژه‌ها
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px]">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-purple-100 rounded-[3rem] rotate-6 transform transition-transform hover:rotate-3 duration-500"></div>
+                    <div class="absolute inset-0 bg-white rounded-[3rem] shadow-2xl overflow-hidden transform transition-transform hover:-translate-y-2 duration-500 border-4 border-white">
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Professional%20handsome%20Iranian%20man%20tech%20developer%20portrait%20minimal%20studio%20lighting%20purple%20accent&w=500&h=500&orientation=squarish" 
+                             alt="Hesam Jafaripoor" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-6 -right-6 glass p-4 rounded-2xl shadow-lg flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 overflow-hidden">
+                             <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brain&icon_set=tabler&color=4f46e5" alt="AI Icon" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500">تخصص</p>
+                            <p class="text-sm font-bold text-slate-800">هوش مصنوعی</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute top-10 -left-6 glass p-4 rounded-2xl shadow-lg flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=palette&icon_set=tabler&color=8b5cf6" alt="Design Icon" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500">خلاقیت</p>
+                            <p class="text-sm font-bold text-slate-800">طراحی UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section name="services" id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">خدمات <span class="text-gradient">تخصصی</span></h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">ارائه راهکارهای نوین دیجیتال با بالاترین استاندارد‌های جهانی</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="group relative p-8 bg-white rounded-3xl border border-slate-100 shadow-lg hover:shadow-premium transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-primary border border-slate-100 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=robot&icon_set=tabler&color=4f46e5" alt="AI Icon" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">توسعه هوش مصنوعی</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">پیاده‌سازی مدل‌های یادگیری ماشین و راهکارهای هوشمند برای کسب‌وکارها.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group relative p-8 bg-white rounded-3xl border border-slate-100 shadow-lg hover:shadow-premium transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-secondary border border-slate-100 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brush&icon_set=tabler&color=8b5cf6" alt="Logo Icon" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">طراحی لوگو</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">خلق هویت بصری ماندگار و مینیمال که برند شما را متمایز می‌کند.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group relative p-8 bg-white rounded-3xl border border-slate-100 shadow-lg hover:shadow-premium transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-indigo-500 border border-slate-100 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=layout&icon_set=tabler&color=6366f1" alt="UI Icon" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">طراحی UI/UX</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">طراحی رابط‌های کاربری چشم‌نواز با تمرکز بر تجربه کاربری روان.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group relative p-8 bg-white rounded-3xl border border-slate-100 shadow-lg hover:shadow-premium transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-pink-500 border border-slate-100 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=settings-automation&icon_set=tabler&color=ec4899" alt="Bot Icon" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">ساخت ربات</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">اتوماسیون فرآیندها و ساخت ربات‌های تلگرام و اینستاگرام هوشمند.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section name="about" id="about" class="py-24 bg-white/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Text Content -->
+                <div class="lg:col-span-5 space-y-8">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">درباره <span class="text-gradient">من</span></h2>
+                    <p class="text-slate-600 leading-loose text-justify">
+                        من حسام جعفری‌پور هستم، یک طراح و توسعه‌دهنده با اشتیاق بی‌پایان برای تکنولوژی و هنر. هدف من پر کردن شکاف بین طراحی زیبا و عملکرد قدرتمند است. با سال‌ها تجربه در زمینه هوش مصنوعی و طراحی رابط کاربری، به برندها کمک می‌کنم تا در دنیای دیجیتال بدرخشند.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg text-slate-600 text-sm font-medium">#خلاقیت</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg text-slate-600 text-sm font-medium">#نوآوری</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg text-slate-600 text-sm font-medium">#مینیمالیسم</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg text-slate-600 text-sm font-medium">#تکنولوژی</span>
+                    </div>
+
+                    <!-- Skills Icons -->
+                    <div class="pt-6">
+                        <h4 class="text-sm font-bold text-slate-900 mb-4">ابزارهای من</h4>
+                        <div class="flex gap-4 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                             <div class="w-8 h-8 overflow-hidden"><img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-figma&icon_set=tabler&color=333" alt="Figma" class="w-full h-full"></div>
+                             <div class="w-8 h-8 overflow-hidden"><img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-python&icon_set=tabler&color=333" alt="Python" class="w-full h-full"></div>
+                             <div class="w-8 h-8 overflow-hidden"><img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-react&icon_set=tabler&color=333" alt="React" class="w-full h-full"></div>
+                             <div class="w-8 h-8 overflow-hidden"><img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-adobe&icon_set=tabler&color=333" alt="Adobe" class="w-full h-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats/Cards -->
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-3xl border border-white shadow-sm flex flex-col justify-between h-full">
+                        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-primary mb-4 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=briefcase&icon_set=tabler&color=4f46e5" alt="Work" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-extrabold text-slate-900 mb-1">+۵</span>
+                            <span class="text-slate-500 font-medium">سال تجربه حرفه‌ای</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-3xl border border-white shadow-sm flex flex-col justify-between h-full">
+                        <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-secondary mb-4 overflow-hidden">
+                            <img src="https://api.designfast.io/v1/svg_generator/findone?desc=check&icon_set=tabler&color=8b5cf6" alt="Check" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-extrabold text-slate-900 mb-1">+۴۰</span>
+                            <span class="text-slate-500 font-medium">پروژه موفق</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section name="projects" id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-2">پروژه‌های <span class="text-gradient">منتخب</span></h2>
+                    <p class="text-slate-500">نمونه کارهای اخیر و برجسته</p>
+                </div>
+                <a href="#" class="hidden sm:inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                    مشاهده همه
+                    <span class="text-lg">&larr;</span>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-premium transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10"></div>
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Modern%20dashboard%20UI%20design%20dark%20mode%20analytics&w=600&h=400&orientation=landscape" 
+                             alt="Project 1" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full">UI/UX</span>
+                            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-bold rounded-full">داشبورد</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">پنل مدیریت هوشمند</h3>
+                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">طراحی رابط کاربری پنل ادمین با تمرکز بر نمایش داده‌ها و تجربه کاربری روان.</p>
+                        <button class="w-full py-3 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 hover:text-primary transition-colors">
+                            مشاهده پروژه
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-premium transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10"></div>
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Minimalist%20logo%20brand%20identity%20mockup%20on%20paper&w=600&h=400&orientation=landscape" 
+                             alt="Project 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full">طراحی لوگو</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full">برندینگ</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">هویت بصری نکست</h3>
+                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">طراحی لوگو مینیمال و هویت بصری کامل برای استارتاپ حوزه فین‌تک.</p>
+                        <button class="w-full py-3 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 hover:text-primary transition-colors">
+                            مشاهده پروژه
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-premium transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors z-10"></div>
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Artificial%20intelligence%20code%20screen%20futuristic&w=600&h=400&orientation=landscape" 
+                             alt="Project 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-full">هوش مصنوعی</span>
+                            <span class="px-3 py-1 bg-pink-50 text-pink-600 text-xs font-bold rounded-full">پایتون</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">ربات تشخیص تصویر</h3>
+                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">توسعه مدل یادگیری عمیق برای تشخیص و طبقه‌بندی تصاویر پزشکی.</p>
+                        <button class="w-full py-3 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 hover:text-primary transition-colors">
+                            مشاهده پروژه
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section name="testimonials" id="testimonials" class="py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center text-slate-900 mb-16">نظرات <span class="text-gradient">مشتریان</span></h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="glass p-8 rounded-3xl border border-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Professional%20man%20avatar&w=100&h=100&orientation=squarish" alt="User" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h5 class="font-bold text-slate-900">امیررضا صادقی</h5>
+                            <p class="text-xs text-slate-500">مدیر عامل تپ‌سی</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "همکاری با حسام تجربه‌ای فوق‌العاده بود. درک عمیق ایشان از نیازهای پروژه و تحویل به موقع کار، فراتر از انتظارات ما بود."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass p-8 rounded-3xl border border-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Professional%20woman%20avatar&w=100&h=100&orientation=squarish" alt="User" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h5 class="font-bold text-slate-900">سارا محمدی</h5>
+                            <p class="text-xs text-slate-500">بنیان‌گذار استارتاپ</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "طراحی رابط کاربری اپلیکیشن ما توسط ایشان انجام شد و بازخوردهای بسیار مثبتی از کاربران دریافت کردیم. بسیار خلاق و حرفه‌ای."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass p-8 rounded-3xl border border-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://api.designfast.io/v1/photo_library/findone?desc=Man%20in%20suit%20avatar&w=100&h=100&orientation=squarish" alt="User" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h5 class="font-bold text-slate-900">علی کریمی</h5>
+                            <p class="text-xs text-slate-500">مدیر مارکتینگ</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "سرعت عمل بالا و کیفیت بی‌نظیر. قطعاً برای پروژه‌های بعدی هوش مصنوعی دوباره با حسام همکاری خواهیم کرد."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section name="contact" id="contact" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-8">
+            <div class="glass rounded-[2.5rem] shadow-premium p-8 sm:p-12 border border-white relative overflow-hidden">
+                <!-- Background decoration within card -->
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+                <div class="text-center mb-10 relative z-10">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-3">شروع یک <span class="text-gradient">همکاری</span></h2>
+                    <p class="text-slate-500">برای مشاوره و سفارش پروژه، فرم زیر را تکمیل کنید.</p>
+                </div>
+
+                <form class="space-y-6 relative z-10">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-slate-700">نام و نام خانوادگی</label>
+                            <input type="text" class="w-full px-5 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-primary/20 text-slate-800 placeholder-slate-400 transition-all" placeholder="مثال: علی رضایی">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-slate-700">ایمیل</label>
+                            <input type="email" class="w-full px-5 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-primary/20 text-slate-800 placeholder-slate-400 transition-all" placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-slate-700">پیام شما</label>
+                        <textarea rows="4" class="w-full px-5 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-primary/20 text-slate-800 placeholder-slate-400 transition-all resize-none" placeholder="درباره پروژه خود بنویسید..."></textarea>
+                    </div>
+                    <button type="button" class="w-full py-4 bg-slate-900 text-white font-bold rounded-xl shadow-lg shadow-slate-900/20 hover:bg-slate-800 hover:scale-[1.01] transition-all duration-200">
+                        ارسال پیام
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer name="footer" class="py-12 border-t border-slate-100 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col items-center gap-6">
+            <div class="flex gap-6">
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:text-pink-600 hover:bg-pink-50 transition-all duration-300 shadow-sm hover:shadow-md border border-slate-100 overflow-hidden">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-instagram&icon_set=tabler&color=currentColor" alt="Instagram" class="w-6 h-6">
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-blue-50 transition-all duration-300 shadow-sm hover:shadow-md border border-slate-100 overflow-hidden">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-linkedin&icon_set=tabler&color=currentColor" alt="LinkedIn" class="w-6 h-6">
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:text-sky-500 hover:bg-sky-50 transition-all duration-300 shadow-sm hover:shadow-md border border-slate-100 overflow-hidden">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-telegram&icon_set=tabler&color=currentColor" alt="Telegram" class="w-6 h-6">
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:text-black hover:bg-slate-200 transition-all duration-300 shadow-sm hover:shadow-md border border-slate-100 overflow-hidden">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-github&icon_set=tabler&color=currentColor" alt="Github" class="w-6 h-6">
+                </a>
+            </div>
+            <p class="text-slate-500 text-sm font-medium">© ۲۰۲۵ حسام جعفری‌پور. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+<!-- <footer class="relative bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+        
+        <div class="grid md:grid-cols-3 gap-10 items-center">
+
+
+            <div class="text-center md:text-right space-y-2">
+                <h3 class="text-xl font-extrabold text-slate-900">
+                    حسام<span class="text-primary">.</span>
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    طراح و توسعه‌دهنده هوش مصنوعی و تجربه کاربری
+                </p>
+            </div>
+
+            <div class="flex justify-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary transition">درباره من</a>
+                <a href="#services" class="hover:text-primary transition">خدمات</a>
+                <a href="#projects" class="hover:text-primary transition">پروژه‌ها</a>
+                <a href="#contact" class="hover:text-primary transition">تماس</a>
+            </div>
+
+            <div class="flex justify-center md:justify-end gap-4">
+                <a href="#" class="w-11 h-11 rounded-full bg-slate-50 flex items-center justify-center hover:bg-pink-50 hover:text-pink-600 transition shadow-sm">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-instagram&icon_set=tabler&color=currentColor" class="w-5 h-5">
+                </a>
+                <a href="#" class="w-11 h-11 rounded-full bg-slate-50 flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 transition shadow-sm">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-linkedin&icon_set=tabler&color=currentColor" class="w-5 h-5">
+                </a>
+                <a href="#" class="w-11 h-11 rounded-full bg-slate-50 flex items-center justify-center hover:bg-sky-50 hover:text-sky-500 transition shadow-sm">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-telegram&icon_set=tabler&color=currentColor" class="w-5 h-5">
+                </a>
+                <a href="#" class="w-11 h-11 rounded-full bg-slate-50 flex items-center justify-center hover:bg-slate-200 hover:text-black transition shadow-sm">
+                    <img src="https://api.designfast.io/v1/svg_generator/findone?desc=brand-github&icon_set=tabler&color=currentColor" class="w-5 h-5">
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-10 border-t border-slate-100 pt-6 text-center">
+            <p class="text-slate-400 text-sm">
+                © ۲۰۲۵ حسام جعفری‌پور — ساخته شده با ❤️ و هوش مصنوعی
+            </p>
+        </div>
+    </div>
+</footer> -->
+
+</body>
+</html>
