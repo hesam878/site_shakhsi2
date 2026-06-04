@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('../font/iransans2.woff2');
+}
+body{
+    font-family: iransans;
+}
+header{
+    /* background: url('../image/bg.jpeg'); */
+    /* background:fixed; */
+    padding: 3%;
+    height: 100%;
+    text-align: center;
+}
+nav{
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+}
+.navbar-nav{
+    float: right;
+}
