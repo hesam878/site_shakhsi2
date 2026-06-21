@@ -430,7 +430,9 @@ nav li{
 }
 .img_projects img{
     text-align: center;
-    margin-right: -15px;
+    margin-right: -12px; 
+    width: 110%;
+    
 }
 .ui , .dashbord , .logo{
     padding:  3px 20px;
@@ -846,6 +848,7 @@ form button{
 
     .project-card{
         margin-bottom: 30px;
+        padding-bottom: 15px;
         width: auto;
         margin: 3vh 2vw;
     }
@@ -853,6 +856,16 @@ form button{
     .body_projects img{
         width: 110%;
         height: auto;
+    }
+
+    .img_projects img{
+        text-align: center;
+        margin-right: -15px; 
+        
+    }
+
+    .btn-view{
+        margin-bottom: 10px;
     }
 
     .body_nazarat{
@@ -1082,6 +1095,10 @@ form button{
     form button{
         width: 88vw;
     }
+
+    .img_projects img{
+        margin-right: -15px; 
+    }
 }
 
 /* @media (max-width: 992px) {
@@ -1258,6 +1275,9 @@ form button{
         margin-top: 20px;
         width: 60vw;
     }
+    .img_projects img{
+        margin-right: -15px;
+    }
 }
 
 /* Small Mobile */
@@ -1274,6 +1294,9 @@ form button{
 
     .btn_cta{
         padding: 10px 28px;
+    }
+    .img_projects img{
+        margin-right: -15px;
     }
 }
 
