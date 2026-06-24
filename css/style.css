@@ -434,7 +434,7 @@ nav li{
     width: 110%;
     
 }
-.ui , .dashbord , .logo{
+.ui , .dashbord , .logo,.branding,.python,.robot{
     padding:  3px 20px;
     font-size: 12px;
 }
@@ -449,6 +449,18 @@ nav li{
 .logo{
     background-color:  rgb(230, 253, 237);
     color: rgb(22 163 74);
+}
+.branding{
+    background-color:  rgb(241 245 249);
+    color: rgb(93 85 105);
+}
+.python{
+    background-color:  rgb(253 242 248);
+    color: rgb(219 39 119);
+}
+.robot{
+    background-color:  #ff6f0019;
+    color: #ff6d00;
 }
 .text_projects p{
     font-size: 14px;
@@ -1541,6 +1553,21 @@ form button{
 .badge.logo {
     background-color: rgb(230, 253, 237);
     color: rgb(22, 163, 74);
+}
+
+.badge.branding{
+    background-color:  rgb(241 245 249);
+    color: rgb(93 85 105);
+}
+
+.badge.python{
+    background-color:  rgb(253 242 248);
+    color: rgb(219 39 119);
+}
+
+.badge.robot{
+    background-color:  #ff6f0019;
+    color: #ff6d00;
 }
 
 .btn-view {
