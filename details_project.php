@@ -441,6 +441,7 @@ $solution = $row['solution'];
             <p>طراح و توسعه‌دهنده هوش مصنوعی و تجربه کاربری</p>
         </div>
         <div class="links_footer text-center">
+        <a href="index.html" class="nav-link d-inline-block p_bold">خانه</a>
             <a href="About.html" class="nav-link d-inline-block p_bold">درباره‌من</a>
             <a href="Services.html" class="nav-link d-inline-block p_bold">خدمات</a>
             <a href="project.html" class="nav-link d-inline-block p_bold">پروژه‌ها</a>
